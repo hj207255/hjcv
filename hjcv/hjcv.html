@@ -14,16 +14,17 @@
         }
     </style>
 </head>
-<body>
+<body id="to-top">
+    <div class="top"><a href="#to-top">回到顶部</a></div>
     <div class="top-nav-bar clearfix">
         <a href="#" class="logo">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
         <nav>
             <ul>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
+                <li><a href="#aboutme">关于</a></li>
+                <li><a href="#skill">技能</a></li>
+                <li><a href="#works">作品</a></li>
                 <li><a href="#">博客</a></li>
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系方式</a></li>
@@ -35,7 +36,7 @@
         <div class="mask"></div>
     </div>
     <main>
-        <div class="user-card clearfix">
+        <div class="user-card clearfix" id="aboutme">
             <div class="user-card-subject clearfix">
                 <div class="picture"><img src="images/avatar.jpg" alt=""></div>
                 <div class="introduction clearfix">
@@ -81,6 +82,67 @@
                 </a>
             </div>
         </div>
+        <p class="download-cv-wrapper">
+            <a href="#" class="download-cv" download>下载 PDF 简历</a>
+        </p>
+        <p class="personal-profile">
+            <span>胡杰，饥人谷学员，前端课程学习者，现在在 饥人谷 学习前端课程。</span><br>
+            <span>技能：xxx，xxx，xxx 开发</span>
+        </p>
+        <div class="personal-skills" id="skill">
+            <h2>技能</h2>
+            <div class="personal-skills-bar clearfix">
+                <ol class="clearfix">
+                    <li>WordPress</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP & MySQL</li>
+                    <li>Drupal</li>
+                    <li>Photoshop</li>
+                </ol>
+            </div>
+        </div>
+        <div class="portfolio" id="works">
+            <h2>作品集</h2>
+            <nav class="portfolio-nav">
+                <ul class="portfolio-all clearfix">
+                    <li id="portfolio-1">所有</li>
+                    <li id="portfolio-2">原生JS & CSS</li>
+                    <li id="portfolio-3">框架</li>
+                </ul>
+                <div class="portfolio-all-bar">
+                    <span class="bar portfolio-nav-1" id="bar"></span>
+                </div>
+            </nav>
+            <div class="job">
+                <div class="big">
+                    <img src="images/1.jpg" alt="作品1">
+                </div>
+                <div class="small-1">
+                    <img src="images/2.jpg" alt="作品2">
+                </div>
+                <div class="small-2">
+                    <img src="images/3.jpg" alt="作品3">
+                </div>
+            </div>
+        </div>
     </main>
+
+
+
+
+
+
+    <script>
+        document.getElementById("portfolio-1").onclick=function () {
+            document.getElementById("bar").className="bar portfolio-nav-1";
+        };
+        document.getElementById("portfolio-2").onclick=function () {
+            document.getElementById("bar").className="bar portfolio-nav-2";
+        };
+        document.getElementById("portfolio-3").onclick=function () {
+            document.getElementById("bar").className="bar portfolio-nav-3";
+        };
+    </script>
 </body>
 </html>
