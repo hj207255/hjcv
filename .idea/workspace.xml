@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2745ce91-6b29-4952-b500-f27cba6e0721" name="默认" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hjcv/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/hjcv/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hjcv/hjcv.html" beforeDir="false" afterPath="$PROJECT_DIR$/hjcv/hjcv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/个人简历制作/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/个人简历制作/images/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/个人简历制作/images/rs-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/个人简历制作/个人简历.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,23 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hjcv.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hjcv.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="186" column="46" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="46" />
-              <folding>
-                <element signature="n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="326">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hjcv/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1376">
-              <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+            <state relative-caret-position="137">
+              <caret line="330" column="24" lean-forward="true" selection-start-line="330" selection-start-column="24" selection-end-line="330" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -55,8 +49,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hjcv/css/style.css" />
         <option value="$PROJECT_DIR$/hjcv/hjcv.html" />
+        <option value="$PROJECT_DIR$/hjcv/css/style.css" />
       </list>
     </option>
   </component>
@@ -139,15 +133,17 @@
       <updated>1534058989698</updated>
       <workItem from="1534058993491" duration="133000" />
       <workItem from="1534059623984" duration="4765000" />
-      <workItem from="1534125474731" duration="9742000" />
+      <workItem from="1534125474731" duration="9888000" />
+      <workItem from="1534152183509" duration="4275000" />
+      <workItem from="1534162731185" duration="5580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14640000" />
+    <option name="totallyTimeSpent" value="24641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14055637" />
@@ -178,11 +174,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3780">
+          <caret line="180" column="50" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hjcv/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2037">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hjcv/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2688">
+          <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3255">
           <caret line="155" column="83" lean-forward="true" selection-start-line="155" selection-start-column="83" selection-end-line="155" selection-end-column="83" />
-          <folding>
-            <element signature="n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -206,20 +227,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hjcv/css/style.css">
+    <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+        <state relative-caret-position="326">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hjcv/hjcv.html">
+    <entry file="file://$PROJECT_DIR$/hjcv/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="186" column="46" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="46" />
-          <folding>
-            <element signature="n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="137">
+          <caret line="330" column="24" lean-forward="true" selection-start-line="330" selection-start-column="24" selection-end-line="330" selection-end-column="24" />
         </state>
       </provider>
     </entry>

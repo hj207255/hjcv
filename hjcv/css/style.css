@@ -17,6 +17,13 @@ body{
     background-color: #efefef;
 }
 
+[date-x].move{
+    transform: translateY(100px);
+}
+[date-x]{
+    transform: translateY(0);
+    transition: all .5s;
+}
 .site-welcome{
     background-color: #888;
     position: fixed;
@@ -94,7 +101,8 @@ body{
     font-weight: bold;
     padding-left: 18px;
 }
-.top-nav-bar li.active a::after{
+.top-nav-bar li.active a::after,
+.top-nav-bar li.scrollAct a::after{
     content: '';
     display: block;
     position: absolute;
@@ -159,9 +167,6 @@ body{
     padding-bottom: 5px;
     font-weight: bold;
 }
-/*.top-nav-bar nav>ul>li>a:hover{*/
-    /*border-bottom: 3px solid #e06567;*/
-/*}*/
 .top-nav-bar nav{
     float: right;
 }
@@ -308,11 +313,12 @@ body{
     font-size: 16px;
     margin-bottom: 50px;
     position: relative;
+
 }
 .personal-skills li:nth-child(even){
     float: right;
 }
-.personal-skills li:before{
+.personal-skills li::before{
     width: 60%;
     content: "";
     display: block;
@@ -322,8 +328,9 @@ body{
     position: absolute;
     bottom: -10px;
     left: 0;
+    transition: all .8s;
 }
-.personal-skills li:after{
+.personal-skills li::after{
     content: "";
     display: block;
     height: 5px;
@@ -335,22 +342,26 @@ body{
     bottom: -10px;
     width: 100%;
 }
-.personal-skills li:nth-child(1):before{
+.personal-skills.move ol li::before{
+    width: 0;
+    transition: all .8s;
+}
+.personal-skills li:nth-child(1)::before{
     width: 60%;
 }
-.personal-skills li:nth-child(2):before{
+.personal-skills li:nth-child(2)::before{
     width: 40%;
 }
-.personal-skills li:nth-child(3):before{
+.personal-skills li:nth-child(3)::before{
     width: 70%;
 }
-.personal-skills li:nth-child(4):before{
+.personal-skills li:nth-child(4)::before{
     width: 80%;
 }
-.personal-skills li:nth-child(5):before{
+.personal-skills li:nth-child(5)::before{
     width: 60%;
 }
-.personal-skills li:nth-child(6):before{
+.personal-skills li:nth-child(6)::before{
     width: 50%;
 }
 .portfolio{
