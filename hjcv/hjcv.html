@@ -14,18 +14,34 @@
         }
     </style>
 </head>
-<body id="to-top">
-    <div class="top"><a href="#to-top">回到顶部</a></div>
-    <div class="top-nav-bar clearfix">
+<body>
+    <div class="site-welcome" id="site-welcome">
+        <div class="loading"></div>
+    </div>
+    <div class="top-nav-bar clearfix" id="top-nav-bar">
         <a href="#" class="logo">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#aboutme">关于</a></li>
                 <li><a href="#skill">技能</a></li>
-                <li><a href="#works">作品</a></li>
-                <li><a href="#">博客</a></li>
+                <li>
+                    <a href="#works">作品</a>
+                    <ul class="works-menu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#blogs">博客</a>
+                    <ul class="works-menu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                    </ul>
+                </li>
                 <li><a href="#">日历</a></li>
                 <li><a href="#">联系方式</a></li>
                 <li><a href="#">其它</a></li>
@@ -143,6 +159,36 @@
         document.getElementById("portfolio-3").onclick=function () {
             document.getElementById("bar").className="bar portfolio-nav-3";
         };
+        setTimeout(function () {//设置定时器
+            document.getElementById("site-welcome").classList.add("active");
+        },500);
+        window.onscroll=function () {
+            if (window.scrollY!=0){
+                document.getElementById("top-nav-bar").classList.add("gundong");
+            }else if (window.scrollY==0){
+                document.getElementById("top-nav-bar").classList.remove("gundong");
+            }
+        };
+        let liTags=document.querySelectorAll(".top-nav-bar>nav>ul>li");
+        for (let i=0;i<liTags.length;i++){
+            liTags[i].onmouseenter=function (x) {
+                x.currentTarget.classList.add('active');
+            };
+            liTags[i].onmouseleave=function (x) {
+                x.currentTarget.classList.remove('active');
+            };
+        }
+        let aTags=document.querySelectorAll(".top-nav-bar>nav>ul>li>a");
+        for (let i=0;i<aTags.length;i++){
+            aTags[i].onclick=function (x) {
+                x.preventDefault();
+                let a=x.currentTarget;
+                let href=a.getAttribute("href");
+                let ele=document.querySelector(href);
+                let top=ele.offsetTop;
+                window.scrollTo(0,top-70);
+            }
+        }
     </script>
 </body>
 </html>
