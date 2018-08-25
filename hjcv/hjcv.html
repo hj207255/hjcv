@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>胡杰的个人简历</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="path/to/swiper.min.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
     <script src="//at.alicdn.com/t/font_775211_ngth2p8k5l9.js"></script>
 </head>
@@ -23,9 +23,9 @@
                 <li>
                     <a href="#works">作品</a>
                     <ul class="works-menu">
-                        <li>作品1</li>
-                        <li>作品2</li>
-                        <li>作品3</li>
+                        <li><a href="https://hj207255.github.io/repo/myBookmarks.html" target="_blank">自制导航页</a></li>
+                        <li><a href="https://hj207255.github.io/applestyle/applestyleSlide.html" target="_blank">苹果风格轮播</a></li>
+                        <li><a href="https://hj207255.github.io/canvas-demo/canvas-demo.html" target="_blank">canvas画板</a></li>
                     </ul>
                 </li>
                 <li><a href="#message">留言板</a></li>
@@ -114,26 +114,33 @@
         </div>
         <div date-x class="portfolio" id="works">
             <h2>作品集</h2>
+            <h4 class="slt">缩略图模式</h4>
+            <div class="dzhanbo">
+                <div class="zhanbo">
+                    <img class="swiper-slide xianshi" src="./images/repo.png" id="img1">
+                    <img class="swiper-slide" src="./images/appleStyle.png" id="img2">
+                    <img class="swiper-slide" src="./images/canvas.png" id="img3">
+                </div>
+            </div>
             <nav class="portfolio-nav">
                 <ul class="portfolio-all clearfix">
-                    <li id="portfolio-1">所有</li>
-                    <li id="portfolio-2">原生JS & CSS</li>
-                    <li id="portfolio-3">框架</li>
+                    <li id="portfolio-1">自制导航</li>
+                    <li id="portfolio-2">苹果风格轮播</li>
+                    <li id="portfolio-3">canvas画板</li>
                 </ul>
                 <div class="portfolio-all-bar">
                     <span class="bar portfolio-nav-1" id="bar"></span>
                 </div>
             </nav>
-            <div class="job">
-                <div class="big">
-                    <img src="images/1.jpg" alt="作品1">
+            <h4 class="infinit">无缝轮播模式</h4>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./images/repo.png">
+                    <img class="swiper-slide" src="./images/appleStyle.png">
+                    <img class="swiper-slide" src="./images/canvas.png">
                 </div>
-                <div class="small-1">
-                    <img src="images/2.jpg" alt="作品2">
-                </div>
-                <div class="small-2">
-                    <img src="images/3.jpg" alt="作品3">
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </main>
@@ -150,15 +157,7 @@
     </div>
 
         
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
+
 
 
 
@@ -167,10 +166,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <script src="./js/main.js"></script>
     <script src="./js/message.js"></script>
-    <script src="path/to/swiper.min.js"></script>
+    
 
     <script>
     var mySwiper = new Swiper ('.swiper-container', {

@@ -110,8 +110,8 @@ body{
     font-weight: bold;
     padding-left: 18px;
 }
-.top-nav-bar li.active a::after,
-.top-nav-bar li.scrollAct a::after{
+.top-nav-bar>.menu>ul>li.active>a::after,
+.top-nav-bar>.menu>ul>li.scrollAct>a::after{
     content: '';
     display: block;
     position: absolute;
@@ -133,7 +133,7 @@ body{
 .works-menu{
     position: absolute;
     white-space: nowrap;
-    top: 30px;
+    top: 28px;
     right: 0;
     padding: 10px 20px;
     background-color: #fff;
@@ -155,6 +155,15 @@ body{
 .works-menu>li{
     margin: 5px 0;
 }
+.works-menu>li>a{
+    color: inherit;
+    font-size: 12px;
+    font-weight: bold;
+}
+.works-menu>li>a:hover{
+    color:#666;
+}
+
 .top-nav-bar .rs{
     color: #e6686a;
     margin-right: 5px;
@@ -380,7 +389,7 @@ body{
 }
 .portfolio h2{
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 15px;
 }
 .portfolio ul{
     display: inline-block;
@@ -400,12 +409,37 @@ body{
 }
 .portfolio-nav {
     display: inline-block;
+    padding-bottom: 30px;
+}
+.slt{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dzhanbo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.zhanbo{
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+}
+.zhanbo img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.zhanbo .xianshi{
+    z-index: 999;
 }
 .portfolio-all-bar {
     height: 5px;
     border-radius: 5px;
     background-color: #fff;
-    margin-top: 13px;
+    margin-top: 5px;
     position: relative;
 
 }
@@ -418,7 +452,7 @@ body{
     background-color: #e8676b;
     position: absolute;
     border-radius: 5px;
-    width: 20%;
+    width: 26%;
     left: 0;
 }
 .portfolio-nav-2 {
@@ -427,8 +461,8 @@ body{
     background-color: #e8676b;
     position: absolute;
     border-radius: 5px;
-    width: 53%;
-    left: 65px;
+    width: 36%;
+    left: 102px;
 }
 .portfolio-nav-3{
     display: inline-block;
@@ -436,41 +470,20 @@ body{
     background-color: #e8676b;
     position: absolute;
     border-radius: 5px;
-    width: 20%;
-    left: 215px;
+    width: 28%;
+    left: 250px;
 }
-.job{
-    max-width: 930px;
-    margin-top: 30px;
-    height: 576px;
-    position: relative;
-    margin-bottom: 100px;
+.infinit{
+    text-align: center;
+    padding-bottom: 20px;
 }
-.job .big{
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-}
-.job .small-1{
-    position: absolute;
-    right: 0;
-    top: 0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-}
-.job .small-2{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-}
-.job img{
-    vertical-align: top;
-}
+
+
 .message{
     max-width: 930px;
     margin: 0 auto;
     padding-bottom: 50px;
+    padding-top: 70px;
 }
 .message h2{
     text-align: center;
@@ -520,7 +533,17 @@ body{
 
 
 .swiper-container {
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     background-color: #fff;
+
+}
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next{
+    opacity: 0;
+    transition: all 1s;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next{
+    opacity: 1;
 }

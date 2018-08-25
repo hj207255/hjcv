@@ -1,12 +1,19 @@
 document.getElementById("portfolio-1").onclick=function () {
     document.getElementById("bar").className="bar portfolio-nav-1";
+    document.getElementById("img1").className="swiper-slide xianshi";
+    $('#img1').siblings('.xianshi').removeClass('xianshi');
 };
 document.getElementById("portfolio-2").onclick=function () {
     document.getElementById("bar").className="bar portfolio-nav-2";
+    document.getElementById("img2").className="swiper-slide xianshi";
+    $('#img2').siblings('.xianshi').removeClass('xianshi');
 };
 document.getElementById("portfolio-3").onclick=function () {
     document.getElementById("bar").className="bar portfolio-nav-3";
+    document.getElementById("img3").className="swiper-slide xianshi";
+    $('#img3').siblings('.xianshi').removeClass('xianshi');
 };
+
 setTimeout(function () {//设置定时器
     document.getElementById("site-welcome").classList.add("active");
 },1000);
