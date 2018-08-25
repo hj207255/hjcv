@@ -397,9 +397,9 @@ body{
 }
 .portfolio li{
     float: left;
-    margin-left: 40px;
-    font-weight: bold;
+    margin-left: 30px;
     cursor: pointer;
+    font-size: 12px;
 }
 .portfolio .portfolio-all li:first-child{
     margin-left: 10px;
@@ -414,6 +414,12 @@ body{
 .slt{
     text-align: center;
     margin-bottom: 10px;
+    cursor: pointer;
+    color: #e8676f;
+}
+.slt:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .4s;
 }
 .dzhanbo{
     text-align: center;
@@ -452,7 +458,7 @@ body{
     background-color: #e8676b;
     position: absolute;
     border-radius: 5px;
-    width: 26%;
+    width: 27%;
     left: 0;
 }
 .portfolio-nav-2 {
@@ -462,7 +468,7 @@ body{
     position: absolute;
     border-radius: 5px;
     width: 36%;
-    left: 102px;
+    left: 79px;
 }
 .portfolio-nav-3{
     display: inline-block;
@@ -470,8 +476,8 @@ body{
     background-color: #e8676b;
     position: absolute;
     border-radius: 5px;
-    width: 28%;
-    left: 250px;
+    width: 30%;
+    left: 184px;
 }
 .infinit{
     text-align: center;
@@ -546,4 +552,19 @@ body{
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next{
     opacity: 1;
+}
+
+
+.layer{
+    display: none;
+}
+.window{
+    display: inline-block;
+    text-align: center;
+}
+.slt>span{
+    display: inline-block;
+    /*transform: scale(0.8);
+    transform-origin: left bottom;*/
+    zoom:0.8;
 }

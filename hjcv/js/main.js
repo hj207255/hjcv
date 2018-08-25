@@ -98,3 +98,31 @@ for (let i=0;i<aTags.length;i++){
         /*******************************/
     }
 }
+
+
+/************浮层***************/
+$('#button').on('click',function(){
+    if($('.layer').is(':hidden')){
+        $('.layer').show();
+    }else{
+        $('.layer').hide();
+    }
+    $(document).one('click',function(){
+        $('.layer').hide();
+    });
+});
+$('.window').on('click',function(e){
+    e.stopPropagation()
+});
+
+/***************刷新跑到顶端*****************/
+window.onload=function(){
+    if(document.body.scrollTop>0){
+        console.log(1);
+        window.scrollTo(0,-1);
+        document.body.scrollTop=0;
+    }
+    window.scrollTo(0,-1);
+    document.body.scrollTop=0;
+    setTimeout(() => window.scrollTo(0,0), 150)
+}
