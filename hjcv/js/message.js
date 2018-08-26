@@ -38,9 +38,11 @@ let btn=document.getElementById('submit');
 btn.addEventListener('click',function(){
 	let inputname=document.getElementById('inputname');
 	let content=document.getElementById('content');
-	let li=document.createElement("li");
-	li.innerText=inputname.value+' : '+content.value;
-	let messageList=document.getElementById('messageList');
-	messageList.appendChild(li);
+	if (inputname.value!=''&&content.value!='') {
+		let li=document.createElement("li");
+		li.innerText=inputname.value+' : '+content.value;
+		let messageList=document.getElementById('messageList');
+		messageList.appendChild(li);
+	}
 })
 
