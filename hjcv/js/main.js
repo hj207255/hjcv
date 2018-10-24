@@ -126,3 +126,78 @@ window.onload=function(){
     document.body.scrollTop=0;
     setTimeout(() => window.scrollTo(0,0), 150)
 }
+
+/********************************************/
+
+var banner = document.querySelector('.user-card');
+banner.addEventListener('mousemove', function(e){
+    this.style.transition = '';
+    var centerX = banner.offsetLeft + banner.offsetWidth / 2,  //div中心点到页面左边距离
+        centerY = banner.offsetTop + banner.offsetHeight / 2;
+
+    var deltaX = e.pageX - centerX,
+        deltaY = e.pageY - centerY;
+
+
+    var percentageX = deltaX / centerX,  //向左或向右的 偏差率
+        percentageY = deltaY / centerY;
+    var deg = 25;  //控制 偏差的 程度
+    this.style.transform = 'rotateX(' + percentageY * deg + 'deg)'
+        + 'rotateY(' + percentageX * deg + 'deg) translateZ(20px)';
+});
+banner.addEventListener('mouseleave', function(e){
+    this.style.transform = 'rotateX(0) rotateY(0) translateZ(0px)';
+    this.style.transition = 'all 0.2s linear';
+})
+
+/********************************************/
+
+$(function () {
+    //当点击跳转链接后，回到页面顶部位置
+    $("#back-to-top").click(function(){
+        //$('body,html').animate({scrollTop:0},1000);
+        if ($('html').scrollTop()) {
+            $('html').animate({ scrollTop: 0 }, 1000);
+            return false;
+        }
+        $('body').animate({ scrollTop: 0 }, 1000);
+        return false;            
+    });  
+});
+
+
+/****************************************************/
+$(document).ready(function() {
+
+  var i = 0;
+  $('.circle-chart').each(function() {
+    var id = 'chart' + i;
+    $(this).attr('id', id);
+    drawCircleChart('#' + id);
+    i++;
+  })
+
+
+  $('.circle-chart').hover(function(e) {
+    e.stopPropagation()
+    var thisId = $(this).attr('id');
+    drawCircleChart('#' + thisId);
+  })
+
+  function drawCircleChart(id) {
+    $(id).empty().append("<p>" + $(id).data('percent') + "%</p>");
+    addOneBar(id);
+  }
+
+  function addOneBar(id) {
+    var percent = $(id).data('percent');
+    var noOfBars = .36 * percent;
+    if ($(id).children().length - 1 < noOfBars) {
+      $(id).append('<div class="bar"></div>');
+      setTimeout(function() {
+        addOneBar(id);
+      }, 30);
+    }
+  }
+
+})

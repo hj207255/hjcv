@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>胡杰的个人简历</title>
     <link rel="stylesheet" href="css/style.css">
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
-    <script src="//at.alicdn.com/t/font_775211_ngth2p8k5l9.js"></script>
+    <base target="blank">
+    <script src="//at.alicdn.com/t/font_884595_a71tiw396yk.js"></script>
 </head>
 <body>
     <div class="site-welcome" id="site-welcome">
@@ -14,7 +14,7 @@
     </div>
     <div class="top-nav-bar clearfix" id="top-nav-bar">
         <a href="#" class="logo">
-            <span class="rs">RS</span><span class="card">card</span>
+            <span class="rs">H</span><span class="card">J</span>
         </a>
         <nav class="menu">
             <ul>
@@ -45,49 +45,96 @@
     <div class="banner">
         <div class="mask"></div>
     </div>
+    <ul class="slide">
+        <li class="slide-phone">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-phone"></use>
+            </svg>
+        </li>
+        <li class="slide-youxiang">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-youxiang"></use>
+            </svg>
+        </li>
+        <li class="slide-weixin">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weixin"></use>
+            </svg>
+        </li>
+        <li class="slide-fanhuidingbu" id="back-to-top">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fanhuidingbu"></use>
+            </svg>
+        </li>
+    </ul>
     <main>
         <div date-x class="user-card clearfix" id="aboutme">
             <div class="user-card-subject clearfix">
-                <div class="picture"><img src="images/avatar.jpg" alt=""></div>
+                <div class="picture"><img src="images/hjcv.jpg" alt="" width="150px"></div>
                 <div class="introduction clearfix">
                     <span class="welcome">
-                        Hello
+                        您好，我是
                         <span class="triangle"></span>
                     </span>
                     <h1>胡杰</h1>
-                    <p>饥人谷学员</p>
-                    <hr>
-                    <dl>
-                        <dt>年龄</dt>
-                        <dd>24</dd>
-                        <dt>所在城市</dt>
-                        <dd>北京</dd>
-                        <dt>邮箱</dt>
-                        <dd>2540991545@qq.com</dd>
-                        <dt>手机</dt>
-                        <dd>18848957028</dd>
-                    </dl>
+                    <p>以前我是一名土木工程师，现在立志要做一名前端工程师</p>
                 </div>
+                <ul class="introduction-content">
+                    <li class="age">
+                        <div class="age-content">
+                            <img src="images/i_age.svg">
+                        </div>
+                        <span>年龄/24岁</span>
+                    </li>
+                    <li class="edu">
+                        <div class="edu-content">
+                            <img src="images/i_edu.svg">
+                        </div>
+                        <span>学历/本科</span>
+                    </li>
+                    <li class="site">
+                        <div class="site-content">
+                            <img src="images/i_site.svg">
+                        </div>
+                        <span>坐标/北京</span>
+                    </li>
+                    <li class="status">
+                        <div class="status-content">
+                            <img src="images/i_status.svg">
+                        </div>
+                        <span>状态/离职</span>
+                    </li>
+                </ul>
             </div>
             <div class="user-card-social">
                 <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-phone"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/hj207255">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://www.jianshu.com/u/3a5680f09542">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-weibiaoti-"></use>
                     </svg>
                 </a>
                 <a href="#">
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
+                        <use xlink:href="#icon-youxiang"></use>
                     </svg>
                 </a>
                 <a href="#">
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-tuite"></use>
+                        <use xlink:href="#icon-weixin"></use>
                     </svg>
                 </a>
                 <a href="#">
                     <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-icongithub"></use>
+                        <use xlink:href="#icon-qq"></use>
                     </svg>
                 </a>
             </div>
@@ -96,12 +143,13 @@
             <a href="#" class="download-cv" download>下载 PDF 简历</a>
         </p>
         <p class="personal-profile">
-            <span>胡杰，饥人谷学员，前端课程学习者，现在在 饥人谷 学习前端课程。</span><br>
-            <span>技能：xxx，xxx，xxx 开发</span>
+            <span>胡杰，毕业于洛阳理工学院。通过知乎了解到前端工程师这个职业。</span><br>
+            <span>通过更进一步的了解，逐渐开始喜欢上前端。目标能够独立的完成前端页面的开发。</span><br>
+            <span>技能：HTML，CSS，JS，JQuery，其中Vue正在深入学习中。</span>
         </p>
         <div date-x class="personal-skills" id="skill">
             <h2>技能</h2>
-            <div class="personal-skills-bar clearfix">
+            <!-- <div class="personal-skills-bar clearfix">
                 <ol class="clearfix">
                     <li>WordPress</li>
                     <li>HTML & CSS</li>
@@ -110,6 +158,30 @@
                     <li>Drupal</li>
                     <li>Photoshop</li>
                 </ol>
+            </div> -->
+            <div class="skill-row1">
+            	<div class="skill-row1-c">
+            		<span class="blue">HTML</span>
+	            	<div class="circle-chart blue" data-percent="80"></div>
+	            </div>
+	            <div class="skill-row1-c">
+	            	<span class="black">CSS</span>
+	            	<div class="circle-chart black" data-percent="60"></div>
+	            </div>
+	            <div class="skill-row1-c">
+	            	<span class="red">JS</span>
+	            	<div class="circle-chart red" data-percent="80"></div>
+	            </div>
+            </div>
+            <div class="skill-row2">
+	            <div class="skill-row1-c">
+	            	<span class="yellow">JQ</span>
+	            	<div class="circle-chart yellow" data-percent="70"></div>
+	            </div>
+	            <div class="skill-row1-c">
+	            	<span class="green">VUE</span>
+	            	<div class="circle-chart green" data-percent="60"></div>
+	            </div>
             </div>
         </div>
         <div date-x class="portfolio" id="works">
