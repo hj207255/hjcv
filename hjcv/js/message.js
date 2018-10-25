@@ -23,6 +23,10 @@ messageForm.addEventListener('submit',function(e){
 })
 
 var query = new AV.Query('Message');
+var now = new Date();
+query.lessThanOrEqualTo('createdAt', now);//查询今天之前创建的 Todo
+query.limit(10);// 最多返回 10 条结果
+query.descending('createdAt');
 query.find().then(function (messages) {
 	let arr=messages.map(function(e){return e.attributes});
 	arr.forEach(function(e){
@@ -31,8 +35,12 @@ query.find().then(function (messages) {
 		let messageList=document.getElementById('messageList');
 		messageList.appendChild(li);
 	})
+	var lis=$('#messageList').children('li')
+	var list=[]
+	for(var i=0;i<lis.length;i++){
+		list.push(lis[i])
+	}
 })
-
 
 let btn=document.getElementById('submit');
 btn.addEventListener('click',function(){
@@ -42,7 +50,10 @@ btn.addEventListener('click',function(){
 		let li=document.createElement("li");
 		li.innerText=inputname.value+' : '+content.value;
 		let messageList=document.getElementById('messageList');
-		messageList.appendChild(li);
+		messageList.prepend(li);
+		$('#messageList').children('li:last').remove();
 	}
 })
+
+
 

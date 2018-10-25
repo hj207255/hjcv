@@ -1,18 +1,18 @@
-document.getElementById("portfolio-1").onclick=function () {
-    document.getElementById("bar").className="bar portfolio-nav-1";
-    document.getElementById("img1").className="swiper-slide xianshi";
-    $('#img1').siblings('.xianshi').removeClass('xianshi');
-};
-document.getElementById("portfolio-2").onclick=function () {
-    document.getElementById("bar").className="bar portfolio-nav-2";
-    document.getElementById("img2").className="swiper-slide xianshi";
-    $('#img2').siblings('.xianshi').removeClass('xianshi');
-};
-document.getElementById("portfolio-3").onclick=function () {
-    document.getElementById("bar").className="bar portfolio-nav-3";
-    document.getElementById("img3").className="swiper-slide xianshi";
-    $('#img3').siblings('.xianshi').removeClass('xianshi');
-};
+// document.getElementById("portfolio-1").onclick=function () {
+//     document.getElementById("bar").className="bar portfolio-nav-1";
+//     document.getElementById("img1").className="swiper-slide xianshi";
+//     $('#img1').siblings('.xianshi').removeClass('xianshi');
+// };
+// document.getElementById("portfolio-2").onclick=function () {
+//     document.getElementById("bar").className="bar portfolio-nav-2";
+//     document.getElementById("img2").className="swiper-slide xianshi";
+//     $('#img2').siblings('.xianshi').removeClass('xianshi');
+// };
+// document.getElementById("portfolio-3").onclick=function () {
+//     document.getElementById("bar").className="bar portfolio-nav-3";
+//     document.getElementById("img3").className="swiper-slide xianshi";
+//     $('#img3').siblings('.xianshi').removeClass('xianshi');
+// };
 
 setTimeout(function () {//设置定时器
     document.getElementById("site-welcome").classList.add("active");
@@ -40,7 +40,7 @@ function yyy(){
         let dateTags=document.querySelectorAll('[date-x]');
         let minIndex=0;
         for (let i=0;i<dateTags.length;i++){
-            if (Math.abs(dateTags[i].offsetTop-window.scrollY)<Math.abs(dateTags[minIndex].offsetTop-window.scrollY)){
+            if (Math.abs(dateTags[i].offsetTop-window.scrollY)<Math.abs((dateTags[minIndex].offsetTop-window.scrollY)/2)){
                 minIndex=i;
             }
         }
@@ -73,8 +73,8 @@ for (let i=0;i<aTags.length;i++){
     aTags[i].onclick=function (x) {
         x.preventDefault();
         let a=x.currentTarget;
-        let href=a.getAttribute("href");
-        let ele=document.querySelector(href);
+        let tiaozhuan=a.getAttribute("href");
+        let ele=document.querySelector(tiaozhuan);
         let top=ele.offsetTop;
         //window.scrollTo(0,top-70);
 
@@ -101,19 +101,19 @@ for (let i=0;i<aTags.length;i++){
 
 
 /************浮层***************/
-$('#button').on('click',function(){
-    if($('.layer').is(':hidden')){
-        $('.layer').show();
-    }else{
-        $('.layer').hide();
-    }
-    $(document).one('click',function(){
-        $('.layer').hide();
-    });
-});
-$('.window').on('click',function(e){
-    e.stopPropagation()
-});
+// $('#button').on('click',function(){
+//     if($('.layer').is(':hidden')){
+//         $('.layer').show();
+//     }else{
+//         $('.layer').hide();
+//     }
+//     $(document).one('click',function(){
+//         $('.layer').hide();
+//     });
+// });
+// $('.window').on('click',function(e){
+//     e.stopPropagation()
+// });
 
 /***************刷新跑到顶端*****************/
 window.onload=function(){
@@ -178,8 +178,7 @@ $(document).ready(function() {
   })
 
 
-  $('.circle-chart').hover(function(e) {
-    e.stopPropagation()
+  $('.circle-chart').click(function() {
     var thisId = $(this).attr('id');
     drawCircleChart('#' + thisId);
   })
