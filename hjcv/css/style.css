@@ -21,7 +21,7 @@ a{
     clear: both;
 }
 body{
-    background-color: #efefef;
+    background: url(../images/bg.png) #efefef;
 }
 
 [date-x].move{
@@ -180,21 +180,19 @@ body{
 }
 .top-nav-bar nav>ul>li>a{
     font-size: 12px;
-    color: inherit;
+    color: #000;
     padding-bottom: 5px;
     font-weight: bold;
 }
 .top-nav-bar nav{
     float: right;
 }
-.banner{
-    background: url("../images/rs-cover.jpg") no-repeat center center;
-    background-size: cover;
+/*.banner{
+    background: url(../images/bg.png) #efefef;
     height: 515px;
-    position: relative;
     z-index: -1;
-}
-.banner .mask{
+}*/
+/*.banner .mask{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -202,17 +200,19 @@ body{
     left: 0;
     background: rgba(0,0,0,.8);
     z-index: 0;
-}
+}*/
 .user-card {
     max-width: 920px;
-    margin: -345px auto 0;
+    margin: 100px auto 0;
     background-color: #fff;
     z-index: 999;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
+    /*box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);*/
     animation: box-shadow .8s ease-out;
+    border-radius: 10px;
+    overflow: hidden;
+    
 }
-.user-card:hover{
+body:hover .user-card{
     box-shadow: 0 0 70px #111;
 }
 
@@ -227,6 +227,7 @@ body{
     align-items: center;
     padding-top: 20px;
     background: url(../images/bg.png) #efefef;
+    margin-bottom: -10px;
 }
 .user-card-subject .picture{
     border-radius: 50%;
@@ -268,7 +269,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     width: 80%;
 }
 .introduction-content .age {
@@ -391,6 +392,7 @@ body{
     margin: 0 auto;
     background-color: #4b85a0;
     text-align: center;
+    border-radius: 10px;
 }
 .user-card-social a{
     height: 40px;
@@ -492,7 +494,7 @@ body{
 /*.user-card-social a:hover img{
     transform: rotate(360deg);
 }*/
-.download-cv-wrapper {
+/*.download-cv-wrapper {
     padding-top: 38px;
     text-align: center;
 }
@@ -508,14 +510,19 @@ body{
 .download-cv:hover{
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     transition: box-shadow .4s;
-}
+}*/
 .personal-profile {
     margin: 40px auto;
     max-width: 930px;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "楷体";
     line-height: 30px;
+    padding: 40px 0;
+}
+.personal-profile span {
+    display: inline-block;
+    margin: 10px 0;
 }
 .personal-skills{
     max-width: 930px;
@@ -737,11 +744,18 @@ body{
     border:none;
     list-style: none;
     cursor: pointer;
-    background: url(../images/post-btn.png) no-repeat center center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #000;
+    /*background: url(../images/post-btn.png) no-repeat center center;*/
 } 
 .message .submit:hover{
-    opacity: .8;
-    transition: opacity .4s;
+    opacity: .5;
+    /*transition: opacity .4s;*/
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.18), 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: all .4s;
 }
 .inputname-row{
     margin-left: 93px;
@@ -874,8 +888,11 @@ body{
 .slide li:nth-child(4){
     background-color: #5c6ac4;
 }
+.slide li:nth-child(5){
+    background-color: pink;
+}
 .slide li:nth-child(1)::after{
-    content: '18848957028';
+    content: '下载PDF简历';
     display: none;
     width: 112px;
     height: 30px;
@@ -889,6 +906,20 @@ body{
     top: 5px;
 }
 .slide li:nth-child(2)::after{
+    content: '18848957028';
+    display: none;
+    width: 112px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: -120px;
+    top: 5px;
+}
+.slide li:nth-child(3)::after{
     content: '2540991545@qq.com';
     display: none;
     width: 180px;
@@ -902,7 +933,7 @@ body{
     left: -185px;
     top: 5px;
 }
-.slide li:nth-child(3)::after{
+.slide li:nth-child(4)::after{
     content: url(../images/wx.jpg);
     display: none;
     width: 140px;
@@ -915,7 +946,7 @@ body{
     left: -145px;
     top: -40px;
 }
-.slide li:nth-child(4)::after{
+.slide li:nth-child(5)::after{
     content: '返回顶部';
     display: none;
     width: 112px;
