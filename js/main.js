@@ -168,7 +168,7 @@ $(function () {
 
 /****************************************************/
 $(document).ready(function() {
-
+//给每个条添加id
   var i = 0;
   $('.circle-chart').each(function() {
     var id = 'chart' + i;
@@ -182,7 +182,7 @@ $(document).ready(function() {
     var thisId = $(this).attr('id');
     drawCircleChart('#' + thisId);
   })
-
+//画圈函数 按照百分比插入多少个bar
   function drawCircleChart(id) {
     $(id).empty().append("<p>" + $(id).data('percent') + "%</p>");
     addOneBar(id);
@@ -200,3 +200,13 @@ $(document).ready(function() {
   }
 
 })
+
+/*******************************************************/
+var clipboard = new ClipboardJS('.copy')
+clipboard.on('success', function(e) {
+ alert('复制成功');
+});
+
+clipboard.on('error', function(e) {
+ console.log(e);
+});

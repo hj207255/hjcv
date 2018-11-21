@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
     <base target="blank">
     <script src="//at.alicdn.com/t/font_884595_3kw17z3wlr2.js"></script>
+    <script src="./js/clipboard.min.js"></script>
 </head>
 <body>
     <div class="site-welcome" id="site-welcome">
@@ -43,8 +44,8 @@
                 <li>
                     <a href="#">联系方式</a>
                     <ul class="works-menu">
-                        <li><a href="javascript:;">手机：18848957028</a></li>
-                        <li><a href="javascript:;">邮箱：2540991545@qq.com</a></li>
+                        <li title='点击复制' class='copy' data-clipboard-text='18848957028'><a href="javascript:;">手机：18848957028</a></li>
+                        <li title='点击复制' class='copy' data-clipboard-text='2540991545@qq.com'><a href="javascript:;">邮箱：2540991545@qq.com</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,12 +62,12 @@
                 </svg>
             </a>
         </li>
-        <li class="slide-phone">
+        <li class="slide-phone copy" title='点击复制' data-clipboard-text='18848957028'>
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-phone"></use>
             </svg>
         </li>
-        <li class="slide-youxiang">
+        <li class="slide-youxiang copy" title='点击复制' data-clipboard-text='2540991545@qq.com'>
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-youxiang"></use>
             </svg>
@@ -82,7 +83,7 @@
             </svg>
         </li>
     </ul>
-    <main>
+    <main> 
         <div date-x class="user-card clearfix" id="aboutme">
             <div class="user-card-subject clearfix">
                 <div class="picture"><img src="images/hjcv.jpg" alt="" width="150px"></div>
@@ -137,7 +138,7 @@
                         <use xlink:href="#icon-weibiaoti-"></use>
                     </svg>
                 </a>
-                <a href="javascript:;">
+                <a href="javascript:;" title='点击复制' class='copy' data-clipboard-text='2540991545@qq.com'>
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-youxiang"></use>
                     </svg>
@@ -325,6 +326,9 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/message.js"></script>
+    
+
+    
     
 
     <!-- <script>
